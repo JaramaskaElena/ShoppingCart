@@ -24,6 +24,15 @@ Persistence is implemented using a relational database (e.g., **SQL Server**) wi
 
 This minimal implementation emphasizes **clarity and correctness**, while remaining easily extensible to a full **microservices architecture** in the future. It demonstrates the **Shopping Cart workflow** with a design that supports maintainability, modularity, and potential scaling of individual components. Specifically, **User** and **Product** are modeled here for demonstration purposes but should exist as independent microservices in a production setup.
 
+## Future Improvements
+
+The current implementation represents a minimal version of the Shopping Cart service. In a full production environment the system would be extended with additional microservices such as **User Service, Product Service, Order Service, and Payment Service**, each responsible for a specific business capability. The **User Service** would also handle **authentication and authorization**.
+
+To improve scalability and decouple services, the platform would adopt an **event-driven architecture** using **Azure Service Bus** as a message broker for asynchronous communication between services.
+
+A **Redis distributed caching layer** would be introduced to store frequently accessed data such as **shopping cart sessions and product catalog queries**, reducing database load and improving response times under high traffic.
+
+Additional improvements would include **JWT-based authentication, API Gateway integration, and distributed tracing and observability using OpenTelemetry**.
 ## Project Structure
 ## Getting Started
 
