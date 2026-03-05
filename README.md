@@ -25,3 +25,16 @@ Persistence is implemented using a relational database (e.g., **SQL Server**) wi
 This minimal implementation emphasizes **clarity and correctness**, while remaining easily extensible to a full **microservices architecture** in the future. It demonstrates the **Shopping Cart workflow** with a design that supports maintainability, modularity, and potential scaling of individual components. Specifically, **User** and **Product** are modeled here for demonstration purposes but should exist as independent microservices in a production setup.
 
 ## Project Structure
+## Getting Started
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/JaramaskaElena/ShoppingCart
+2.Restore dependencies:
+**Restore dependencies**
+dotnet restore
+**Apply database migrations (Code-First approach):**
+dotnet ef database update
+**Run the application:**
+Run the application:
+dotnet run
