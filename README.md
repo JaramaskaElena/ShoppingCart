@@ -30,11 +30,9 @@ This minimal implementation emphasizes **clarity and correctness**, while remain
 1. **Clone the repository:**
 ```bash
 git clone https://github.com/JaramaskaElena/ShoppingCart
-2.Restore dependencies:
 **Restore dependencies**
 dotnet restore
 **Apply database migrations (Code-First approach):**
 dotnet ef database update
 **Run the application:**
-Run the application:
 dotnet run
